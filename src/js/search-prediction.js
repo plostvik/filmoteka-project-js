@@ -31,7 +31,7 @@ const inputSearch = function () {
       i++;
       searchUl.insertAdjacentHTML(
         'beforeend',
-        `<li class="search-list-item" data-id=${id}>${title} - ${vote_average}</li>`,
+        `<li class="search-list-item" data-id=${id}>${title} - <span class="vote-average">${vote_average}</span></li>`,
       );
     });
     modal(data);
